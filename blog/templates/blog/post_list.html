@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p class="text"> IT WORKS </p>
+    <form action="" method="post">
+         {% csrf_token %}
+        <div class="block">
+            <label class="label" for="url">Your url: </label>
+            <input class="input" id="url" type="text" name="url" value="{{ current_name }}">
+        </div>
+        <input class="submit" type="submit" value="OK">
+    </form>
+
+<style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-image: url('https://img.freepik.com/premium-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg?w=2000');
+            padding: 40px;
+        }
+
+        .text {
+            color: black;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        form {
+            width: 300px;
+            height: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .block {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .label {
+            color: white;
+            width: fit-content;
+        }
+
+        .input {
+            width: calc(79% - 10px);
+            height: 20px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .submit {
+            margin-top: 10px;
+            background-color: white;
+            border: 0;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+    </style>
+</body>
+</html>
