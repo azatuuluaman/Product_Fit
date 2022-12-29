@@ -5,3 +5,4 @@ WORKDIR app
 COPY . ./
 
 RUN pip install -r requirements.txt
+#RUN  manage.py migrate
